@@ -1,0 +1,205 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #000, #333);
+    color: #fff;
+}
+
+header {
+    background: linear-gradient(to right, #212121, #333333);
+    padding: 1em;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header .logo img {
+    width: 50px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+header nav li {
+    margin-right: 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    padding: 5px;
+}
+
+header nav a:hover::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: neon blue;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+header .social-media {
+    display: flex;
+    gap: 10px;
+}
+
+header .social-media a img {
+    width: 20px;
+    height: 20px;
+}
+
+section {
+    padding: 2em;
+    margin: 80px 20px 20px; /* Adjust margin-top for fixed header */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#hero {
+    background: url('galaxy-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 4em 2em;
+}
+
+#hero h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: neon pink;
+    color: #fff;
+    font-size: 1.2em;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: neon purple;
+}
+
+#features {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2em;
+    border-radius: 15px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.feature-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.feature-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    opacity: 0.6; /* 60% transparency */
+}
+.feature-box a {
+    display: block;
+    color: inherit; /* Inherit color from parent */
+    text-decoration: none; /* Remove underline */
+}
+
+.feature-box a:hover {
+    text-decoration: none; /* Ensure no underline on hover */
+}
+
+.feature-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.feature-box h2, .feature-box p {
+    margin: 10px 0;
+}
+
+
+.feature-box h2 {
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+
+.feature-box p {
+    margin-top: 10px;
+}
+
+#testimonials {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2em;
+    border-radius: 15px;
+}
+
+.testimonial-box {
+    margin-bottom: 20px;
+}
+
+.testimonial-box blockquote {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+#cta {
+    background: neon blue;
+    padding: 2em;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#cta h2 {
+    margin-bottom: 1em;
+}
+
+footer {
+    background: linear-gradient(to right, #212121, #333333);
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
